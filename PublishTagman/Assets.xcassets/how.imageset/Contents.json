@@ -1,36 +1,17 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
+      "idiom" : "universal",
+      "filename" : "how.png",
       "scale" : "1x"
     },
     {
-      "idiom" : "iphone",
+      "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "idiom" : "iphone",
-      "scale" : "3x"
-    },
-    {
-      "resizing" : {
-        "mode" : "9-part",
-        "center" : {
-          "mode" : "stretch",
-          "width" : 1,
-          "height" : 1
-        },
-        "cap-insets" : {
-          "bottom" : 16,
-          "top" : 16,
-          "right" : 16,
-          "left" : 16
-        }
-      },
       "idiom" : "universal",
-      "filename" : "how.png",
-      "unassigned" : true,
-      "scale" : "1x"
+      "scale" : "3x"
     }
   ],
   "info" : {

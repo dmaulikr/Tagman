@@ -2,6 +2,7 @@
   "images" : [
     {
       "idiom" : "iphone",
+      "filename" : "play.png",
       "scale" : "1x"
     },
     {
@@ -11,26 +12,6 @@
     {
       "idiom" : "iphone",
       "scale" : "3x"
-    },
-    {
-      "resizing" : {
-        "mode" : "9-part",
-        "center" : {
-          "mode" : "tile",
-          "width" : 300,
-          "height" : 222
-        },
-        "cap-insets" : {
-          "bottom" : 0,
-          "top" : 0,
-          "right" : 16,
-          "left" : 16
-        }
-      },
-      "idiom" : "universal",
-      "filename" : "play.png",
-      "unassigned" : true,
-      "scale" : "1x"
     }
   ],
   "info" : {

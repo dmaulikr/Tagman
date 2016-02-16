@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,26 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="5ct-db-Zhy">
-                                <rect key="frame" x="-0.5" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="5ct-db-Zhy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5ct-db-Zhy" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="EYN-9D-8v2"/>
-                            <constraint firstItem="5ct-db-Zhy" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="NcR-Yv-ScA"/>
-                            <constraint firstItem="5ct-db-Zhy" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="sQ4-sz-qeR"/>
-                            <constraint firstItem="5ct-db-Zhy" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="z4X-fK-BUU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5ct-db-Zhy" secondAttribute="trailing" constant="-20" id="Uxc-Ye-5LL"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="5ct-db-Zhy" secondAttribute="bottom" id="mke-ua-OsG"/>
+                            <constraint firstItem="5ct-db-Zhy" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="ovG-Ky-GhV"/>
+                            <constraint firstItem="5ct-db-Zhy" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="tEO-ET-gPB"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="374"/>
+            <point key="canvasLocation" x="136.5" y="373.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="launchScreen" width="747" height="1331"/>
+        <image name="launchScreen" width="750" height="1334"/>
     </resources>
 </document>
