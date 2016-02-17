@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="88Y-ne-6PN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="88Y-ne-6PN">
                                 <rect key="frame" x="-4" y="0.0" width="383" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="ymq-Yt-Xf3"/>
@@ -98,14 +98,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="wCC-bK-net">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="wCC-bK-net">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="tFH-mI-Wyx"/>
                                 </constraints>
                             </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="d29-hy-Yox">
+                                <rect key="frame" x="29" y="177" width="317" height="314"/>
+                                <color key="backgroundColor" red="0.070070349150000003" green="0.60433493949999995" blue="0.010364151469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="abF-Ka-CmC">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="L3m-px-8oV">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbU-yV-Bek">
+                                <rect key="frame" x="0.0" y="576" width="375" height="91"/>
+                                <color key="backgroundColor" red="0.062745098040000002" green="0.43921568630000002" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lbU-yV-Bek" firstAttribute="top" secondItem="d29-hy-Yox" secondAttribute="bottom" constant="85" id="Jjk-Tb-2s7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wCC-bK-net" secondAttribute="trailing" constant="-20" id="Qg8-gQ-lJ1"/>
+                            <constraint firstItem="d29-hy-Yox" firstAttribute="leading" secondItem="DvZ-uV-BzZ" secondAttribute="leadingMargin" constant="13" id="RGA-SQ-r43"/>
+                            <constraint firstItem="OHr-aT-tTV" firstAttribute="top" secondItem="d29-hy-Yox" secondAttribute="bottom" constant="176" id="dHg-nb-jrT"/>
+                            <constraint firstItem="wCC-bK-net" firstAttribute="leading" secondItem="DvZ-uV-BzZ" secondAttribute="leadingMargin" constant="-20" id="gWI-e1-VZf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d29-hy-Yox" secondAttribute="trailing" constant="13" id="ihr-0f-Qfq"/>
+                            <constraint firstItem="wCC-bK-net" firstAttribute="top" secondItem="DvZ-uV-BzZ" secondAttribute="topMargin" id="lCm-UB-SjV"/>
+                            <constraint firstItem="OHr-aT-tTV" firstAttribute="top" secondItem="lbU-yV-Bek" secondAttribute="bottom" id="qES-Gp-p8C"/>
+                            <constraint firstItem="lbU-yV-Bek" firstAttribute="leading" secondItem="DvZ-uV-BzZ" secondAttribute="leadingMargin" constant="-20" id="uhF-Lm-nRv"/>
+                            <constraint firstItem="d29-hy-Yox" firstAttribute="top" secondItem="wCC-bK-net" secondAttribute="bottom" constant="106" id="vTd-G9-jxS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lbU-yV-Bek" secondAttribute="trailing" constant="-20" id="w3K-gX-8Oe"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -148,7 +187,7 @@
                                     <constraint firstAttribute="width" secondItem="g4D-tB-w7o" secondAttribute="height" multiplier="280:213" id="k87-c5-SqC"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="ljp-OU-PI9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="ljp-OU-PI9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="i8e-dp-V2o"/>
@@ -191,7 +230,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="oui-EY-4yE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="oui-EY-4yE">
                                 <rect key="frame" x="-4" y="0.0" width="383" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="qr1-yE-iBC"/>
