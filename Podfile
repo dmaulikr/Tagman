@@ -2,7 +2,7 @@
 # platform :ios, '6.0'
 
 target 'PublishTagman' do
-
+pod 'DCAnimationKit'
 end
 
 target 'PublishTagmanTests' do

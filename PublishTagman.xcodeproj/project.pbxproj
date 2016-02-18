@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02102DC81C753ACD0021DF86 /* HowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02102DC71C753ACD0021DF86 /* HowViewController.m */; };
+		02102DCB1C753ADA0021DF86 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02102DCA1C753ADA0021DF86 /* PlayViewController.m */; };
+		02102DD01C753B0B0021DF86 /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02102DCF1C753B0B0021DF86 /* ScoreViewController.m */; };
+		02102DD31C7546280021DF86 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02102DD21C7546280021DF86 /* CoreMotion.framework */; };
 		02F2C53A1C5BE23400965D0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F2C5391C5BE23400965D0D /* main.m */; };
 		02F2C53D1C5BE23400965D0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F2C53C1C5BE23400965D0D /* AppDelegate.m */; };
 		02F2C5401C5BE23400965D0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F2C53F1C5BE23400965D0D /* ViewController.m */; };
@@ -16,6 +20,7 @@
 		02F2C5531C5BE23400965D0D /* PublishTagmanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F2C5521C5BE23400965D0D /* PublishTagmanTests.m */; };
 		02F2C55E1C5BE23400965D0D /* PublishTagmanUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F2C55D1C5BE23400965D0D /* PublishTagmanUITests.m */; };
 		02F2C5701C5BE58600965D0D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F2C56F1C5BE58600965D0D /* HomeViewController.m */; };
+		C3EA28DDEFF83212D438C46E /* libPods-PublishTagman.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23876CCB20B909CB705E165 /* libPods-PublishTagman.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02102DC61C753ACD0021DF86 /* HowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HowViewController.h; sourceTree = "<group>"; };
+		02102DC71C753ACD0021DF86 /* HowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HowViewController.m; sourceTree = "<group>"; };
+		02102DC91C753ADA0021DF86 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		02102DCA1C753ADA0021DF86 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		02102DCE1C753B0B0021DF86 /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
+		02102DCF1C753B0B0021DF86 /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
+		02102DD21C7546280021DF86 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		02F2C5351C5BE23400965D0D /* PublishTagman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PublishTagman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F2C5391C5BE23400965D0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		02F2C53B1C5BE23400965D0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PublishTagman/AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +66,9 @@
 		02F2C55F1C5BE23400965D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02F2C56E1C5BE58600965D0D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		02F2C56F1C5BE58600965D0D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		61C03919648B0823BCBDA705 /* Pods-PublishTagman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PublishTagman.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PublishTagman/Pods-PublishTagman.debug.xcconfig"; sourceTree = "<group>"; };
+		82E31C223D7D1065EDC974BE /* Pods-PublishTagman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PublishTagman.release.xcconfig"; path = "Pods/Target Support Files/Pods-PublishTagman/Pods-PublishTagman.release.xcconfig"; sourceTree = "<group>"; };
+		B23876CCB20B909CB705E165 /* libPods-PublishTagman.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PublishTagman.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02102DD31C7546280021DF86 /* CoreMotion.framework in Frameworks */,
+				C3EA28DDEFF83212D438C46E /* libPods-PublishTagman.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02102DCC1C753AE00021DF86 /* HowViewController */ = {
+			isa = PBXGroup;
+			children = (
+				02102DC61C753ACD0021DF86 /* HowViewController.h */,
+				02102DC71C753ACD0021DF86 /* HowViewController.m */,
+			);
+			name = HowViewController;
+			sourceTree = "<group>";
+		};
+		02102DCD1C753AEF0021DF86 /* PlayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				02102DC91C753ADA0021DF86 /* PlayViewController.h */,
+				02102DCA1C753ADA0021DF86 /* PlayViewController.m */,
+			);
+			name = PlayViewController;
+			sourceTree = "<group>";
+		};
+		02102DD11C753B0E0021DF86 /* ScoreViewController */ = {
+			isa = PBXGroup;
+			children = (
+				02102DCE1C753B0B0021DF86 /* ScoreViewController.h */,
+				02102DCF1C753B0B0021DF86 /* ScoreViewController.m */,
+			);
+			name = ScoreViewController;
+			sourceTree = "<group>";
+		};
 		02F2C52C1C5BE23400965D0D = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +132,8 @@
 				02F2C5511C5BE23400965D0D /* PublishTagmanTests */,
 				02F2C55C1C5BE23400965D0D /* PublishTagmanUITests */,
 				02F2C5361C5BE23400965D0D /* Products */,
+				56E388C173EBA4F106B4478E /* Pods */,
+				22A11984ED37F141A8A16C98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +193,9 @@
 			isa = PBXGroup;
 			children = (
 				02F2C5711C5BE58A00965D0D /* HomeViewController */,
+				02102DCC1C753AE00021DF86 /* HowViewController */,
+				02102DCD1C753AEF0021DF86 /* PlayViewController */,
+				02102DD11C753B0E0021DF86 /* ScoreViewController */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -178,6 +227,24 @@
 			name = HomeViewController;
 			sourceTree = "<group>";
 		};
+		22A11984ED37F141A8A16C98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02102DD21C7546280021DF86 /* CoreMotion.framework */,
+				B23876CCB20B909CB705E165 /* libPods-PublishTagman.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56E388C173EBA4F106B4478E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61C03919648B0823BCBDA705 /* Pods-PublishTagman.debug.xcconfig */,
+				82E31C223D7D1065EDC974BE /* Pods-PublishTagman.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02F2C5621C5BE23400965D0D /* Build configuration list for PBXNativeTarget "PublishTagman" */;
 			buildPhases = (
+				2E20DBAE0218A73EF05B78AE /* Check Pods Manifest.lock */,
 				02F2C5311C5BE23400965D0D /* Sources */,
 				02F2C5321C5BE23400965D0D /* Frameworks */,
 				02F2C5331C5BE23400965D0D /* Resources */,
+				BA494FCDF1020B76BDC74381 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,14 +372,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E20DBAE0218A73EF05B78AE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BA494FCDF1020B76BDC74381 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PublishTagman/Pods-PublishTagman-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02F2C5311C5BE23400965D0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02102DC81C753ACD0021DF86 /* HowViewController.m in Sources */,
+				02102DD01C753B0B0021DF86 /* ScoreViewController.m in Sources */,
 				02F2C5401C5BE23400965D0D /* ViewController.m in Sources */,
 				02F2C53D1C5BE23400965D0D /* AppDelegate.m in Sources */,
 				02F2C53A1C5BE23400965D0D /* main.m in Sources */,
+				02102DCB1C753ADA0021DF86 /* PlayViewController.m in Sources */,
 				02F2C5701C5BE58600965D0D /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +553,7 @@
 		};
 		02F2C5631C5BE23400965D0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C03919648B0823BCBDA705 /* Pods-PublishTagman.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PublishTagman/Info.plist;
@@ -459,6 +565,7 @@
 		};
 		02F2C5641C5BE23400965D0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82E31C223D7D1065EDC974BE /* Pods-PublishTagman.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PublishTagman/Info.plist;
@@ -535,6 +642,7 @@
 				02F2C5641C5BE23400965D0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02F2C5651C5BE23400965D0D /* Build configuration list for PBXNativeTarget "PublishTagmanTests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +651,7 @@
 				02F2C5671C5BE23400965D0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02F2C5681C5BE23400965D0D /* Build configuration list for PBXNativeTarget "PublishTagmanUITests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +660,7 @@
 				02F2C56A1C5BE23400965D0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

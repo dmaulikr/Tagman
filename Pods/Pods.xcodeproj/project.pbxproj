@@ -6,43 +6,201 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1581D1B110D6913DDD71D7B03EDBEFE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08D1024620295AAA2F22106BA001913 /* Foundation.framework */; };
+		22C65698EE2CC299E924B76329A4C6D1 /* UIView+DCAnimationKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2075956374D737090E8B15EF493D71 /* UIView+DCAnimationKit.h */; };
+		23EA7E5027FB003B5355DEDF68BB524D /* UIView+DCAnimationKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F28F751EFA22BD9F83A9B759C239949 /* UIView+DCAnimationKit.m */; };
+		74A94FEAA6929FDF16CAA3FC333B545D /* Pods-PublishTagman-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3E5C105961F9444373337386F45F45 /* Pods-PublishTagman-dummy.m */; };
+		C798C24FEC6E11DAC83E18BB1E6AC12A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08D1024620295AAA2F22106BA001913 /* Foundation.framework */; };
+		C8806E0702797290EBE95307211E45CB /* DCAnimationKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF807DC44A6D7B8ACE616213F446EFD8 /* DCAnimationKit-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8348A52A0305C31D8A063498EA1FCA84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24144B1CCA4413F93FA953278D0BE2F8;
+			remoteInfo = DCAnimationKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1F28F751EFA22BD9F83A9B759C239949 /* UIView+DCAnimationKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+DCAnimationKit.m"; sourceTree = "<group>"; };
+		28504D7992AE034F7C825091A4117410 /* Pods-PublishTagman-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PublishTagman-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2D2075956374D737090E8B15EF493D71 /* UIView+DCAnimationKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+DCAnimationKit.h"; sourceTree = "<group>"; };
+		4E3E5C105961F9444373337386F45F45 /* Pods-PublishTagman-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PublishTagman-dummy.m"; sourceTree = "<group>"; };
+		56C29969798A1843142997EEB3F490F6 /* DCAnimationKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DCAnimationKit-Private.xcconfig"; sourceTree = "<group>"; };
+		5CC7344C645B760D8DD9E00BDFE93891 /* DCAnimationKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DCAnimationKit-prefix.pch"; sourceTree = "<group>"; };
+		6E3D46619736845BFE3DCF9B564FAC91 /* DCAnimationKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DCAnimationKit.xcconfig; sourceTree = "<group>"; };
+		9C3E6C4339DDC78E07FEEE9DC1AB79AA /* Pods-PublishTagman.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PublishTagman.debug.xcconfig"; sourceTree = "<group>"; };
+		A80C5E488934899BB97F1760C1B32456 /* Pods-PublishTagman.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PublishTagman.release.xcconfig"; sourceTree = "<group>"; };
+		AE88F268C49C87CF014B2C413E192849 /* Pods-PublishTagman-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PublishTagman-resources.sh"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB0E0AA9B2EB3D5D81D436164E425ABE /* Pods-PublishTagman-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PublishTagman-acknowledgements.plist"; sourceTree = "<group>"; };
+		C08D1024620295AAA2F22106BA001913 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E480095687EC195264D35EECED631118 /* libDCAnimationKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDCAnimationKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D41D881D66BC8BAA9BFA105B87C98F /* libPods-PublishTagman.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PublishTagman.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF807DC44A6D7B8ACE616213F446EFD8 /* DCAnimationKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DCAnimationKit-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		21C04426B0C81A2E0640CEA74F74727B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1581D1B110D6913DDD71D7B03EDBEFE0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA2B0134BFC5178511884C4A35444376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C798C24FEC6E11DAC83E18BB1E6AC12A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+		2BD378C664DE61877791352984193754 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				CDDDCA46354D4ECF95883EF3919412A0 /* DCAnimationKit */,
 			);
-			name = Frameworks;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C08D1024620295AAA2F22106BA001913 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				2BD378C664DE61877791352984193754 /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */,
+				9A65E57C537CCCF409E841BC3388CE45 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		9A65E57C537CCCF409E841BC3388CE45 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1923E5CD17DCD02F59868F502123B97 /* Pods-PublishTagman */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A07E83145A71E04BE95D9E308C032E3B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E3D46619736845BFE3DCF9B564FAC91 /* DCAnimationKit.xcconfig */,
+				56C29969798A1843142997EEB3F490F6 /* DCAnimationKit-Private.xcconfig */,
+				EF807DC44A6D7B8ACE616213F446EFD8 /* DCAnimationKit-dummy.m */,
+				5CC7344C645B760D8DD9E00BDFE93891 /* DCAnimationKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DCAnimationKit";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				E480095687EC195264D35EECED631118 /* libDCAnimationKit.a */,
+				E8D41D881D66BC8BAA9BFA105B87C98F /* libPods-PublishTagman.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */ = {
+		CDDDCA46354D4ECF95883EF3919412A0 /* DCAnimationKit */ = {
 			isa = PBXGroup;
 			children = (
+				2D2075956374D737090E8B15EF493D71 /* UIView+DCAnimationKit.h */,
+				1F28F751EFA22BD9F83A9B759C239949 /* UIView+DCAnimationKit.m */,
+				A07E83145A71E04BE95D9E308C032E3B /* Support Files */,
 			);
-			name = "Targets Support Files";
+			path = DCAnimationKit;
+			sourceTree = "<group>";
+		};
+		F1923E5CD17DCD02F59868F502123B97 /* Pods-PublishTagman */ = {
+			isa = PBXGroup;
+			children = (
+				28504D7992AE034F7C825091A4117410 /* Pods-PublishTagman-acknowledgements.markdown */,
+				BB0E0AA9B2EB3D5D81D436164E425ABE /* Pods-PublishTagman-acknowledgements.plist */,
+				4E3E5C105961F9444373337386F45F45 /* Pods-PublishTagman-dummy.m */,
+				AE88F268C49C87CF014B2C413E192849 /* Pods-PublishTagman-resources.sh */,
+				9C3E6C4339DDC78E07FEEE9DC1AB79AA /* Pods-PublishTagman.debug.xcconfig */,
+				A80C5E488934899BB97F1760C1B32456 /* Pods-PublishTagman.release.xcconfig */,
+			);
+			name = "Pods-PublishTagman";
+			path = "Target Support Files/Pods-PublishTagman";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BDA8A1F460DB465542CB1B1112C619FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C65698EE2CC299E924B76329A4C6D1 /* UIView+DCAnimationKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		24144B1CCA4413F93FA953278D0BE2F8 /* DCAnimationKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE4C86390D4113EB7D4E301A3D8F2A9 /* Build configuration list for PBXNativeTarget "DCAnimationKit" */;
+			buildPhases = (
+				8C46BE25229C4F2D97E4B4D5462D8BED /* Sources */,
+				21C04426B0C81A2E0640CEA74F74727B /* Frameworks */,
+				BDA8A1F460DB465542CB1B1112C619FA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCAnimationKit;
+			productName = DCAnimationKit;
+			productReference = E480095687EC195264D35EECED631118 /* libDCAnimationKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2E113E7CC5F27D5A6ABB4145F540C26D /* Pods-PublishTagman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DABF6BFB1416ED99C228C1C7B2ADC82 /* Build configuration list for PBXNativeTarget "Pods-PublishTagman" */;
+			buildPhases = (
+				06A5E0BC3AD8CBB593D8FD9583044D36 /* Sources */,
+				BA2B0134BFC5178511884C4A35444376 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04F37B72D21E563770A802F5D6A16479 /* PBXTargetDependency */,
+			);
+			name = "Pods-PublishTagman";
+			productName = "Pods-PublishTagman";
+			productReference = E8D41D881D66BC8BAA9BFA105B87C98F /* libPods-PublishTagman.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
@@ -63,11 +221,74 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				24144B1CCA4413F93FA953278D0BE2F8 /* DCAnimationKit */,
+				2E113E7CC5F27D5A6ABB4145F540C26D /* Pods-PublishTagman */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXSourcesBuildPhase section */
+		06A5E0BC3AD8CBB593D8FD9583044D36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74A94FEAA6929FDF16CAA3FC333B545D /* Pods-PublishTagman-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C46BE25229C4F2D97E4B4D5462D8BED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8806E0702797290EBE95307211E45CB /* DCAnimationKit-dummy.m in Sources */,
+				23EA7E5027FB003B5355DEDF68BB524D /* UIView+DCAnimationKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04F37B72D21E563770A802F5D6A16479 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DCAnimationKit;
+			target = 24144B1CCA4413F93FA953278D0BE2F8 /* DCAnimationKit */;
+			targetProxy = 8348A52A0305C31D8A063498EA1FCA84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2D8E1B84560C2F4C976BCEAB3200D512 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C29969798A1843142997EEB3F490F6 /* DCAnimationKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DCAnimationKit/DCAnimationKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8BF239A9508D8B2B79BC867B40B6EA7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C29969798A1843142997EEB3F490F6 /* DCAnimationKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DCAnimationKit/DCAnimationKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -107,6 +328,22 @@
 			};
 			name = Debug;
 		};
+		BD5ABC0999A5EDC84B4C4F384154DF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A80C5E488934899BB97F1760C1B32456 /* Pods-PublishTagman.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -141,6 +378,22 @@
 			};
 			name = Release;
 		};
+		F52D8ABE0AAA68330B0062E93E981DE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C3E6C4339DDC78E07FEEE9DC1AB79AA /* Pods-PublishTagman.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -149,6 +402,24 @@
 			buildConfigurations = (
 				8D1534490D941DCA47C62AC4314182AF /* Debug */,
 				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DABF6BFB1416ED99C228C1C7B2ADC82 /* Build configuration list for PBXNativeTarget "Pods-PublishTagman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52D8ABE0AAA68330B0062E93E981DE7 /* Debug */,
+				BD5ABC0999A5EDC84B4C4F384154DF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEE4C86390D4113EB7D4E301A3D8F2A9 /* Build configuration list for PBXNativeTarget "DCAnimationKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BF239A9508D8B2B79BC867B40B6EA7D /* Debug */,
+				2D8E1B84560C2F4C976BCEAB3200D512 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

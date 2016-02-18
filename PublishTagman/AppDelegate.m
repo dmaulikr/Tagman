@@ -1,11 +1,3 @@
-//
-//  AppDelegate.m
-//  PublishTagman
-//
-//  Created by Bruno Muniz Azevedo Filho on 1/29/16.
-//  Copyright © 2016 bmaf. All rights reserved.
-//
-
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -16,7 +8,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [application setStatusBarStyle:UIStatusBarStyleLightContent];
     return YES;
 }
 
