@@ -29,6 +29,12 @@
     scoreViewController.score = [NSString stringWithFormat:@"%i", score];
 }
 
+#pragma mark - IBAction
+- (IBAction)didTappedFinishButton:(id)sender{
+    [self stopAccelerometer];
+    [self performSegueWithIdentifier:@"scoreSegueId" sender:self];
+}
+
 #pragma mark - Private Methods
 - (void)startAccelerometer {
     UIAccelerometer *accelerometer = [UIAccelerometer sharedAccelerometer];
@@ -57,12 +63,5 @@
     }
     self.liveScoreLabel.text = [NSString stringWithFormat:@"%i", score];
 }
-
-#pragma mark - IBAction
-- (IBAction)didTappedFinishButton:(id)sender{
-    [self stopAccelerometer];
-    [self performSegueWithIdentifier:@"scoreSegueId" sender:self];
-}
-
 
 @end

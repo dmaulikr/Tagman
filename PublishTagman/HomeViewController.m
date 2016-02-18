@@ -7,6 +7,8 @@
 @property (nonatomic, weak) IBOutlet UIButton *howButton;
 @property (nonatomic, weak) IBOutlet UIImageView *headerImage;
 @property (nonatomic, weak) IBOutlet UIImageView *logoImage;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *verticalDistanceGhostConstraint;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *verticalDistancePacConstraint;
 
 @end
 
@@ -14,6 +16,7 @@
 
 - (void)viewDidLoad{
     [self.logoImage expandIntoView:self.view finished:nil];
+    [self updateCartoonConstraintsIfNeeded];
 }
 
 - (void) viewDidAppear:(BOOL)animated{
@@ -28,6 +31,17 @@
 
 - (IBAction)didTappedHowButton:(id)sender{
     [self performSegueWithIdentifier:@"howSegueId" sender:self];
+}
+
+#pragma mark - Private Methods
+- (void) updateCartoonConstraintsIfNeeded{
+    if([[UIDevice currentDevice]userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
+        if ([[UIScreen mainScreen] bounds].size.height == 667 || [[UIScreen mainScreen] bounds].size.height == 736){
+            self.verticalDistanceGhostConstraint.constant = 35;
+            self.verticalDistancePacConstraint.constant = 35;
+            [self updateViewConstraints];
+        }
+    }
 }
 
 @end

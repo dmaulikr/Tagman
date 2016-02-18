@@ -10,10 +10,11 @@
 @end
 
 @implementation PageViewController
+
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.pageTitles = @[@"0", @"1", @"2", @"3"];
-    self.pageImages = @[@"firstInstruction", @"secondInstruction", @"thirdInstruction", @"fourthInstruction"];
+    self.pageTitles = @[@"0", @"1", @"2", @"3", @"4", @"5"];
+    self.pageImages = @[@"firstInstruction", @"secondInstruction", @"thirdInstruction", @"fourthInstruction", @"fifthInstruction", @"sixthInstruction"];
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     self.pageViewController.dataSource = self;
     
@@ -36,7 +37,6 @@
 }
 
 #pragma mark - UIPageViewController DataSource
-
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController{
     NSUInteger index = ((PageContentViewController*) viewController).pageIndex;
     

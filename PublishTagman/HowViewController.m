@@ -17,10 +17,12 @@
     [self.pageControl setPageIndicatorTintColor:[UIColor lightGrayColor]];
 }
 
+#pragma mark - IBAction
 - (IBAction)didTappedToStart:(id)sender{
     [self performSegueWithIdentifier:@"startSegueId" sender:self];
 }
 
+#pragma mark - Private Methods
 - (void) updatePageControlConstraintIfNeeded{
     if([[UIDevice currentDevice]userInterfaceIdiom] == UIUserInterfaceIdiomPhone){
         if ([[UIScreen mainScreen] bounds].size.height == 667 || [[UIScreen mainScreen] bounds].size.height == 736){

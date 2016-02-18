@@ -10,6 +10,7 @@
 @property (nonatomic, weak) IBOutlet UIImageView *middleBadgeImage;
 @property (nonatomic, weak) IBOutlet UIImageView *rightBadgeImage;
 @property (nonatomic, weak) IBOutlet UILabel *pointsLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *classificationTextImage;
 
 @end
 
@@ -22,19 +23,25 @@
         [self.view bringSubviewToFront:self.pointsLabel];
     }];
     self.playerNameLabel.text = [[UIDevice currentDevice] name];
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
-#pragma mark - IBAction
-- (IBAction)didTappedHomeButton:(id)sender{
-    [self performSegueWithIdentifier:@"homeSegueId" sender:self];
-}
-
-- (IBAction)didTappedRetryButton:(id)sender{
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    if (self.score.intValue > 1000) {
+        self.middleBadgeImage.image = [UIImage imageNamed:@"diamondGhostON"];
+        self.classificationTextImage.image = [UIImage imageNamed:@"messageDiamond"];
+        self.rightBadgeImage.image = [UIImage imageNamed:@"goldenGhostOFF"];
+        self.leftBadgeImage.image = [UIImage imageNamed:@"timberGhostOFF"];
+    }
+    else if (self.score.intValue > 0){
+        self.middleBadgeImage.image = [UIImage imageNamed:@"goldenGhostON"];
+        self.classificationTextImage.image = [UIImage imageNamed:@"messageGolden"];
+        self.rightBadgeImage.image = [UIImage imageNamed:@"diamondGhostOFF"];
+        self.leftBadgeImage.image = [UIImage imageNamed:@"timberGhostOFF"];
+    }
+    else{
+        self.middleBadgeImage.image = [UIImage imageNamed:@"timberGhostON"];
+        self.classificationTextImage.image = [UIImage imageNamed:@"messageTimber"];
+        self.rightBadgeImage.image = [UIImage imageNamed:@"diamondGhostOFF"];
+        self.leftBadgeImage.image = [UIImage imageNamed:@"goldenGhostOFF"];
+    }
 }
 
 - (void) viewDidAppear:(BOOL)animated{
@@ -88,6 +95,19 @@
             }];
         }];
     }];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+#pragma mark - IBAction
+- (IBAction)didTappedHomeButton:(id)sender{
+    [self performSegueWithIdentifier:@"homeSegueId" sender:self];
+}
+
+- (IBAction)didTappedRetryButton:(id)sender{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
