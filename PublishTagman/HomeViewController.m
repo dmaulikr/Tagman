@@ -12,8 +12,13 @@
 
 @implementation HomeViewController
 
-- (void) viewDidAppear:(BOOL)animated{
+- (void)viewDidLoad{
     [self.logoImage expandIntoView:self.view finished:nil];
+}
+
+- (void) viewDidAppear:(BOOL)animated{
+    [self.playButton tada:nil];
+    [self.howButton tada:nil];
 }
 
 #pragma mark - IBAction

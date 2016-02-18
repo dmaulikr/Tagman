@@ -7,6 +7,7 @@
 }
 
 @property (nonatomic, weak) IBOutlet UILabel *liveScoreLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *cartoonImage;
 
 @end
 
@@ -14,7 +15,7 @@
 
 - (void) viewWillAppear:(BOOL)animated{
     score = 0;
-    self.liveScoreLabel.text = [NSString stringWithFormat:@"%li", score];
+    self.liveScoreLabel.text = [NSString stringWithFormat:@"%i", score];
     countdownToDecrease = 100;
 }
 
@@ -25,7 +26,7 @@
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     ScoreViewController *scoreViewController = [[ScoreViewController alloc] init];
     scoreViewController = segue.destinationViewController;
-    scoreViewController.score = [NSString stringWithFormat:@"%li", score];
+    scoreViewController.score = [NSString stringWithFormat:@"%i", score];
 }
 
 #pragma mark - Private Methods
@@ -44,15 +45,17 @@
     double const kThreshold = 2.0;
     if (fabs(acceleration.x) > kThreshold || fabs(acceleration.y) > kThreshold || fabs(acceleration.z) > kThreshold) {
         score += 1;
+        self.cartoonImage.image = [UIImage imageNamed:@"bigGhost1"];
     }
     else{
         countdownToDecrease -= 1;
         if (countdownToDecrease <= 0) {
             score -= 10;
             countdownToDecrease = 100;
+            self.cartoonImage.image = [UIImage imageNamed:@"bigGhost3"];
         }
     }
-    self.liveScoreLabel.text = [NSString stringWithFormat:@"%li", score];
+    self.liveScoreLabel.text = [NSString stringWithFormat:@"%i", score];
 }
 
 #pragma mark - IBAction

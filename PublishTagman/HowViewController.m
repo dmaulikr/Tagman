@@ -11,4 +11,8 @@
     [super viewDidLoad];
 }
 
+- (IBAction)didTappedToStart:(id)sender{
+    [self performSegueWithIdentifier:@"" sender:self];
+}
+
 @end
