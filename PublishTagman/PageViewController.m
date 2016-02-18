@@ -12,7 +12,7 @@
 @implementation PageViewController
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.pageTitles = @[@"1", @"2", @"3", @"4"];
+    self.pageTitles = @[@"0", @"1", @"2", @"3"];
     self.pageImages = @[@"firstInstruction", @"secondInstruction", @"thirdInstruction", @"fourthInstruction"];
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     self.pageViewController.dataSource = self;
@@ -32,7 +32,6 @@
     PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
     pageContentViewController.imageFile = self.pageImages[index];
     pageContentViewController.pageIndex = index;
-    
     return pageContentViewController;
 }
 
@@ -44,7 +43,6 @@
     if ((index == 0) || (index == NSNotFound)) {
         return nil;
     }
-    
     index--;
     return [self viewControllerAtIndex:index];
 }
@@ -55,7 +53,6 @@
     if (index == NSNotFound) {
         return nil;
     }
-    
     index++;
     if (index == [self.pageTitles count]) {
         return nil;

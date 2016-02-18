@@ -122,7 +122,8 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="Lbm-1I-7qU" kind="presentation" modalTransitionStyle="crossDissolve" id="xym-cW-OTM"/>
+                                    <action selector="didTappedToStart:" destination="8CR-2L-5Vd" eventType="touchUpInside" id="6o8-fE-9tJ"/>
+                                    <segue destination="Lbm-1I-7qU" kind="presentation" identifier="startSegueId" modalTransitionStyle="crossDissolve" id="xym-cW-OTM"/>
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSY-OO-WVs">
@@ -131,23 +132,35 @@
                                     <segue destination="otA-qg-51r" kind="embed" id="Emt-bS-iDc"/>
                                 </connections>
                             </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Okx-lX-BVi">
+                                <rect key="frame" x="18" y="344" width="284" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Okx-lX-BVi" firstAttribute="top" secondItem="aSY-OO-WVs" secondAttribute="bottom" constant="-33" id="MbM-yn-jXT"/>
                             <constraint firstItem="wCC-bK-net" firstAttribute="bottom" secondItem="aSY-OO-WVs" secondAttribute="top" constant="-19" id="Meo-eG-JIC"/>
                             <constraint firstItem="aSY-OO-WVs" firstAttribute="centerX" secondItem="DvZ-uV-BzZ" secondAttribute="centerX" id="QUk-rn-773"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wCC-bK-net" secondAttribute="trailing" constant="-20" id="Qg8-gQ-lJ1"/>
                             <constraint firstItem="aSY-OO-WVs" firstAttribute="leading" secondItem="DvZ-uV-BzZ" secondAttribute="leadingMargin" constant="2" id="TsO-dC-HeJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aSY-OO-WVs" secondAttribute="trailing" constant="2" id="XBk-AM-v7h"/>
                             <constraint firstItem="aSY-OO-WVs" firstAttribute="centerY" secondItem="DvZ-uV-BzZ" secondAttribute="centerY" constant="-6.5" id="Xzp-a9-tXD"/>
+                            <constraint firstItem="Okx-lX-BVi" firstAttribute="leading" secondItem="aSY-OO-WVs" secondAttribute="leading" id="fQT-8L-B32"/>
                             <constraint firstItem="wCC-bK-net" firstAttribute="leading" secondItem="DvZ-uV-BzZ" secondAttribute="leadingMargin" constant="-20" id="gWI-e1-VZf"/>
                             <constraint firstItem="wCC-bK-net" firstAttribute="top" secondItem="DvZ-uV-BzZ" secondAttribute="topMargin" id="lCm-UB-SjV"/>
+                            <constraint firstItem="Okx-lX-BVi" firstAttribute="trailing" secondItem="aSY-OO-WVs" secondAttribute="trailing" id="o9R-nh-kyj"/>
                             <constraint firstItem="OHr-aT-tTV" firstAttribute="top" secondItem="lbU-yV-Bek" secondAttribute="bottom" id="qES-Gp-p8C"/>
                             <constraint firstItem="lbU-yV-Bek" firstAttribute="leading" secondItem="DvZ-uV-BzZ" secondAttribute="leadingMargin" constant="-20" id="uhF-Lm-nRv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lbU-yV-Bek" secondAttribute="trailing" constant="-20" id="w3K-gX-8Oe"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="pageControl" destination="Okx-lX-BVi" id="Lda-cg-9lS"/>
+                        <outlet property="verticalPageControlConstraint" destination="MbM-yn-jXT" id="Lf2-r9-Sxx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m91-kQ-nmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -472,6 +485,6 @@
         <image name="timberGhostON" width="236" height="236"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QFo-P8-XT6"/>
+        <segue reference="xym-cW-OTM"/>
     </inferredMetricsTieBreakers>
 </document>
