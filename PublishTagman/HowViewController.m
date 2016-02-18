@@ -1,4 +1,5 @@
 #import "HowViewController.h"
+#import "PageContentViewController.h"
 
 @interface HowViewController ()
 
@@ -8,7 +9,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 @end

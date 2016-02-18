@@ -1,5 +1,4 @@
 #import "PlayViewController.h"
-#import <CoreMotion/CoreMotion.h>
 #import "ScoreViewController.h"
 
 @interface PlayViewController () <UIAccelerometerDelegate>{
@@ -13,9 +12,13 @@
 
 @implementation PlayViewController
 
-- (void)viewDidAppear:(BOOL)animated {
+- (void) viewWillAppear:(BOOL)animated{
     score = 0;
+    self.liveScoreLabel.text = [NSString stringWithFormat:@"%li", score];
     countdownToDecrease = 100;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
     [self startAccelerometer];
 }
 
@@ -41,16 +44,15 @@
     double const kThreshold = 2.0;
     if (fabs(acceleration.x) > kThreshold || fabs(acceleration.y) > kThreshold || fabs(acceleration.z) > kThreshold) {
         score += 1;
-        self.liveScoreLabel.text = [NSString stringWithFormat:@"%li", score];
     }
     else{
         countdownToDecrease -= 1;
         if (countdownToDecrease <= 0) {
             score -= 10;
             countdownToDecrease = 100;
-            self.liveScoreLabel.text = [NSString stringWithFormat:@"%li", score];
         }
     }
+    self.liveScoreLabel.text = [NSString stringWithFormat:@"%li", score];
 }
 
 #pragma mark - IBAction

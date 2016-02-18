@@ -3,6 +3,10 @@
 @interface ScoreViewController ()
 
 @property (nonatomic, weak) IBOutlet UILabel *scoreLabel;
+@property (nonatomic, weak) IBOutlet UILabel *playerNameLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *leftBadgeImage;
+@property (nonatomic, weak) IBOutlet UIImageView *middleBadgeImage;
+@property (nonatomic, weak) IBOutlet UIImageView *rightBadgeImage;
 
 @end
 
@@ -16,6 +20,7 @@
     [super viewDidLoad];
 }
 
+#pragma mark - IBAction
 - (IBAction)didTappedHomeButton:(id)sender{
     [self performSegueWithIdentifier:@"homeSegueId" sender:self];
 }

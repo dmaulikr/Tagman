@@ -16,6 +16,7 @@
     [self.logoImage expandIntoView:self.view finished:nil];
 }
 
+#pragma mark - IBAction
 - (IBAction)didTappedPlayButton:(id)sender{
     [self performSegueWithIdentifier:@"playSegueId" sender:self];
 }
