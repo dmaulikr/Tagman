@@ -317,6 +317,7 @@
 				TargetAttributes = {
 					02F2C5341C5BE23400965D0D = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = YZUJB2SK5Y;
 					};
 					02F2C54D1C5BE23400965D0D = {
 						CreatedOnToolsVersion = 7.2;
@@ -560,6 +561,7 @@
 			baseConfigurationReference = 61C03919648B0823BCBDA705 /* Pods-PublishTagman.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PublishTagman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bmaf.PublishTagman;
@@ -572,6 +574,7 @@
 			baseConfigurationReference = 82E31C223D7D1065EDC974BE /* Pods-PublishTagman.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PublishTagman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bmaf.PublishTagman;
