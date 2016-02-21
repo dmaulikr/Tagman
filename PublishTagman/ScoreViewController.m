@@ -1,5 +1,6 @@
 #import "ScoreViewController.h"
 #import "UIView+DCAnimationKit.h"
+#import <iAd/iAd.h>
 
 @interface ScoreViewController ()
 

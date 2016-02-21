@@ -12,6 +12,7 @@
 		02102DD01C753B0B0021DF86 /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02102DCF1C753B0B0021DF86 /* ScoreViewController.m */; };
 		0211D84F1C755CE300CFFC60 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0211D84E1C755CE300CFFC60 /* PageContentViewController.m */; };
 		0211D8521C75624200CFFC60 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0211D8511C75624200CFFC60 /* PageViewController.m */; };
+		025576FC1C79C17800C76C99 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 025576FB1C79C17800C76C99 /* iAd.framework */; };
 		02F2C53A1C5BE23400965D0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F2C5391C5BE23400965D0D /* main.m */; };
 		02F2C53D1C5BE23400965D0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F2C53C1C5BE23400965D0D /* AppDelegate.m */; };
 		02F2C5431C5BE23400965D0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F2C5411C5BE23400965D0D /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		0211D84E1C755CE300CFFC60 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		0211D8501C75624200CFFC60 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
 		0211D8511C75624200CFFC60 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		025576FB1C79C17800C76C99 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		02F2C5351C5BE23400965D0D /* PublishTagman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PublishTagman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F2C5391C5BE23400965D0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		02F2C53B1C5BE23400965D0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PublishTagman/AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				025576FC1C79C17800C76C99 /* iAd.framework in Frameworks */,
 				C3EA28DDEFF83212D438C46E /* libPods-PublishTagman.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +236,7 @@
 		22A11984ED37F141A8A16C98 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				025576FB1C79C17800C76C99 /* iAd.framework */,
 				02102DD21C7546280021DF86 /* CoreMotion.framework */,
 				B23876CCB20B909CB705E165 /* libPods-PublishTagman.a */,
 			);

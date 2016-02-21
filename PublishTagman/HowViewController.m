@@ -1,5 +1,6 @@
 #import "HowViewController.h"
 #import "PageContentViewController.h"
+#import <iAd/iAd.h>
 
 @interface HowViewController ()
 

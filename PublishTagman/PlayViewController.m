@@ -1,13 +1,16 @@
 #import "PlayViewController.h"
 #import "ScoreViewController.h"
+#import <iAd/iAd.h>
 
-@interface PlayViewController () <UIAccelerometerDelegate>{
+@interface PlayViewController () <UIAccelerometerDelegate, ADBannerViewDelegate>{
     NSInteger score;
     NSInteger countdownToDecrease;
+    BOOL _bannerIsVisible;
 }
 
 @property (nonatomic, weak) IBOutlet UILabel *liveScoreLabel;
 @property (nonatomic, weak) IBOutlet UIImageView *cartoonImage;
+@property (nonatomic, weak) IBOutlet ADBannerView *bannerView;
 
 @end
 
@@ -62,6 +65,23 @@
         }
     }
     self.liveScoreLabel.text = [NSString stringWithFormat:@"%i", score];
+}
+
+#pragma mark - iAds
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner{
+    if (!_bannerIsVisible){
+        [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
+        [UIView commitAnimations];
+        _bannerIsVisible = YES;
+    }
+}
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error{
+    if (_bannerIsVisible){
+        [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
+        [UIView commitAnimations];
+        _bannerIsVisible = NO;
+    }
 }
 
 @end

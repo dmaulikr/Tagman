@@ -54,10 +54,15 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jCU-YP-EjV">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="66"/>
+                            </adBannerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="jCU-YP-EjV" firstAttribute="leading" secondItem="oJF-ux-8Qh" secondAttribute="leadingMargin" constant="-20" id="0u6-0A-ejj"/>
                             <constraint firstItem="S8j-LD-NLj" firstAttribute="leading" secondItem="oJF-ux-8Qh" secondAttribute="leadingMargin" constant="24" id="1Df-Bd-VRu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jCU-YP-EjV" secondAttribute="trailing" constant="-20" id="2iV-Dn-HkG"/>
                             <constraint firstItem="iMO-Xj-s42" firstAttribute="centerX" secondItem="oJF-ux-8Qh" secondAttribute="centerX" id="3Iy-tz-bbD"/>
                             <constraint firstItem="iMO-Xj-s42" firstAttribute="top" secondItem="S8j-LD-NLj" secondAttribute="bottom" constant="24.5" id="7GZ-xc-XXy"/>
                             <constraint firstItem="oOf-sd-O4d" firstAttribute="top" secondItem="iMO-Xj-s42" secondAttribute="bottom" constant="8" id="8Ft-LI-RZl"/>
@@ -69,6 +74,7 @@
                             <constraint firstItem="88Y-ne-6PN" firstAttribute="top" secondItem="oJF-ux-8Qh" secondAttribute="topMargin" id="Qq2-KM-jeA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="d4g-b4-57Q" secondAttribute="trailing" constant="83" id="RoL-N1-aR8"/>
                             <constraint firstItem="S8j-LD-NLj" firstAttribute="top" secondItem="d4g-b4-57Q" secondAttribute="bottom" constant="8" id="Rqs-xC-J6i"/>
+                            <constraint firstItem="jCU-YP-EjV" firstAttribute="top" secondItem="oJF-ux-8Qh" secondAttribute="topMargin" id="n6H-21-TDR"/>
                             <constraint firstItem="S8j-LD-NLj" firstAttribute="centerX" secondItem="oJF-ux-8Qh" secondAttribute="centerX" id="rgy-xw-IMH"/>
                             <constraint firstItem="d4g-b4-57Q" firstAttribute="top" secondItem="88Y-ne-6PN" secondAttribute="bottom" constant="16" id="w3B-b3-S8z"/>
                             <constraint firstItem="d4g-b4-57Q" firstAttribute="leading" secondItem="oJF-ux-8Qh" secondAttribute="leadingMargin" constant="83" id="zEk-gO-e5M"/>
@@ -81,6 +87,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="bannerView" destination="jCU-YP-EjV" id="C1u-1k-ik3"/>
                         <outlet property="cartoonImage" destination="d4g-b4-57Q" id="28b-nY-BAo"/>
                         <outlet property="liveScoreLabel" destination="S8j-LD-NLj" id="jlp-XB-BQh"/>
                         <segue destination="w21-KJ-acr" kind="show" identifier="scoreSegueId" id="rII-pM-Wrx"/>
