@@ -1,4 +1,4 @@
-# Tagman ![Apple Store](https://db.tt/Fsb4RsR1)
+# Tagman <img align="left" alt="appStore" src="http://s10.postimg.org/u1xybghqd/Screen_Shot_2016_03_20_at_5_20_32_PM.png" style="width: 5px;">
 
 <img align="right" alt="Tagman" src="http://s27.postimg.org/vuxxbnzvn/35_home.png" style="width: 15px;">
 
